@@ -3,37 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="/css/normalize.css">
     <title>Nerd's</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="main-nav">
             <img src="/svg/nerds-logo.svg" alt="Nerd's" width="159.87" height="65.02">
-            <ul>
-                <li><a href="/blank.html">Студия</a></li>
-                <li><a href="/blank.html">Клиенты</a></li>
-                <li><a href="/shop.html">Магазин</a></li>
-                <li><a href="/blank.html">Контакты</a></li>
+            <ul class="main-nav-list">
+                <li class="main-nav-item"><a href="/blank.html">Студия</a></li>
+                <li class="main-nav-item"><a href="/blank.html">Клиенты</a></li>
+                <li class="main-nav-item"><a href="/shop.html">Магазин</a></li>
+                <li class="main-nav-item"><a href="/blank.html">Контакты</a></li>
             </ul>
-            <img src="/svg/cart-icon.svg" alt="Корзина">
-            <a href="#">Корзина</a>
+            <img class="basket-img" src="/svg/cart-icon.svg" alt="Корзина" width="15px" height="15px">
+            <a class="basket" href="#">Корзина</a>
         </nav>
     </header>
 
-    <main>
+    <main class="container">
         <h1>Информация о компании Nerd's</h1>
-        <section>
+        <section class="advantages">
             <h2>
                 Долго, дорого,<br> 
                 скурпулезно!
             </h2>
-            <p>
+            <p >
                 Математически выверенный дизайн <br>
                 для вашего сайта или мобильного приложения
             </p>
             <a href="blank.html">
-                <button type="button">Узнать больше</button>
+                <button class="button info-button"   type="button">Узнать больше</button>
             </a>
 
             <!-- Оставить фото в данной секции или выделить как-то по-другому, возможно кинуть его на фон?
@@ -42,116 +43,130 @@
             <img src="/img/Telephones.png" alt="design" width="760" height="431">
         </section>
 
-        <section>
+        <section class="directions">
             <h2>Продукты компании</h2>
-            <ul>
-                <li>
+            <ul class="directions-list">
+                <li class="directions-item">
                     <h3>Веб-сайты</h3>
                     <img src="/img/pk.png" alt="Ноутбук" width="300" height="146">
                     <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-                    <button type="button">Заказать</button>
+                    <button class="button red-button" type="button">Заказать</button>
 
                     <!-- Оборачивать ли кнопки в ссылку? -->
 
                 </li>
-                <li>
+                <li class="directions-item">
                     <h3>Приложения</h3>
                     <img src="/img/phone.png" alt="Телефон" width="300" height="146">
                     <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-                    <button type="button">Заказать</button>
+                    <button class="button green-button" type="button">Заказать</button>
                 </li>
-                <li>
+                <li class="directions-item">
                     <h3>Презентации</h3>
                     <img src="/img/board.png" alt="Интерактивная доска" width="300" height="146">
                     <p>Вы даже не подозреваете,  насколько вы изумительны!</p>
-                    <button type="button">Заказать</button>
+                    <button class="button yellow-button" type="button">Заказать</button>
                 </li>
             </ul>
         </section>
 
-        <section>
-            <h2>
-                Мы — маленькая, но гордая дизайн-студия из Краснодара. 
-            </h2>
-            <p>
-                Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
-                превыше креатива. Работаем не покладая рук, как роботы.
-            </p>
-            <h3>Выполняем заказы на разработку:</h3>
-            <ul>
+        <section class="specialization-statistics">
+            <div class="specialization">
+                <h2>
+                    Мы — маленькая, но гордая дизайн-студия из Краснодара. 
+                </h2>
+                <p>
+                    Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
+                    превыше креатива. Работаем не покладая рук, как роботы.
+                </p>
+                <h3>Выполняем заказы на разработку:</h3>
+                <ul class="specialization-list" >
 
-                <!-- Красная черточка перед каждым пунктом списка -->
+                    <!-- Красная черточка перед каждым пунктом списка (можно сделать с помощью span)-->
 
-                <li>Веб-сайтов любой сложности</li>
-                <li>Мобильных приложений для iOS и Android</li>
-                <li>Слайдшоу и видео для корпоративных презентаций</li>
-            </ul>
-
+                    <li class="specialization-item">
+                        Веб-сайтов любой сложности
+                    </li>
+                    <li class="specialization-item">
+                        Мобильных приложений для iOS и Android
+                    </li>
+                    <li class="specialization-item">
+                        Слайдшоу и видео для корпоративных презентаций
+                    </li>
+                </ul>
+            </div>
             <!-- Нужно ли выделять правую часть в отдельную секцию? -->
-
-            <img src="/img/Nerd's.png" alt="Logo">
-            <h3>с 2004 года Любим точность во всем:</h3>
-            <ul>
-                <li>
-                    <h4>146%</h4>
-                    <p>Уровень самоотдачи</p>
-                </li>
-                <li>
-                    <h4>100%</h4>
-                    <p>Соблюдение  сроков</p>
-                </li>
-                <li>
-                    <h4>50%</h4>
-                    <p>Минимальная предоплата</p>
-                </li>
-            </ul>
+            <div class="statistics">
+                <img src="/img/Nerd's.png" alt="Logo">
+                <h3>с 2004 года Любим точность во всем:</h3>
+                <ul class="statistics-list">
+                    <li class="statistics-item">
+                        <h4>146%</h4>
+                        <p>Уровень самоотдачи</p>
+                    </li>
+                    <li class="statistics-item">
+                        <h4>100%</h4>
+                        <p>Соблюдение  сроков</p>
+                    </li>
+                    <li class="statistics-item">
+                        <h4>50%</h4>
+                        <p>Минимальная предоплата</p>
+                    </li>
+                </ul>
+            </div>
         </section>
 
-        <section>
+        <section class="products">
             <h2>Наши работы</h2>
-            <ul> <!-- Нужно ли задавать размеры элементам в данном списке -->
-                <li> <!-- Что делать с эмблемой HTML? -->
-                    <img src="" alt="">
+            <ul class="products-list"> <!-- Нужно ли задавать размеры элементам в данном списке -->
+                <li class="products-item"> <!-- Что делать с эмблемой HTML? -->
+                    <img src="/img/HTML_ac.png" alt="" width="199px" height="67.82px">
                 </li>
-                <li>
-                    <img src="/img/Borodinski.png" alt="Borodinski">
+                <li class="products-item">
+                    <img src="/img/Borodinski.png" alt="Borodinski" width="209px" height="90px">
                 </li>
-                <li>
-                    <img src="/img/Ochkarik.png" alt="Pink">
+                <li class="products-item">
+                    <img src="/img/Ochkarik.png" alt="Pink" width="185px" height="52px">
                 </li>
-                <li>
-                    <img src="/img/mishka.png" alt="Mishka">
+                <li class="products-item">
+                    <img src="/img/mishka.png" alt="Mishka" width="173px" height="84px">
                 </li>
             </ul>
         </section>
 
     </main>
-    <footer>
-        <section> <!-- На задний фон этой секции положить карту -->
-            <h2>Контактные данные</h2>
-            <div>
-                <h3>NЁRDS DESIGN STUDIO</h3>
-                <p>
-                    191186, Санкт-Петербург,<br>  
-                    ул. Б. Конюшенная, д. 19/8<br>
-                    <br> 
-                    тел. +7 (812) 275-75-75
-                </p>
-                <a href="blank.html"><button>Напишите нам</button></a> <!-- Нужно ли оборачивать кнопку в ссылку? -->
+    <footer class="main-footer">
+        <section class="footer-contacts"> <!-- На задний фон этой секции положить карту -->
+            <div class="container-contacts">
+                <h2>Контактные данные</h2>
+                <div class="main-contacts">
+                    <h3>NЁRDS DESIGN STUDIO</h3>
+                    <p>
+                        191186, Санкт-Петербург,<br>  
+                        ул. Б. Конюшенная, д. 19/8<br>
+                        <br> 
+                        тел. +7 (812) 275-75-75
+                    </p>
+                    <a href="blank.html">
+                        <button class="button info-button" type="button">
+                            Напишите нам
+                        </button>
+                    </a> <!-- Нужно ли оборачивать кнопку в ссылку? -->
+                </div>
+                <img src="/img/metka.png"alt="Point">
             </div>
-            <img src="/img/metka.png"alt="Point">
         </section>
-        <section>
+        <section class="footer-socials">
             <h2>Давайте дружить, это выгодно!</h2>
             <p>Скидка 10% для друзей из социальных сетей.</p>
-            <ul>
-                <li>
+            <ul class="social-list">
+                <li class="social-item">
                     <img src="/svg/vk-icon.svg" alt="VK">
                 </li>
-                <li>
+                <li class="social-item">
                     <img src="/svg/insta-icon.svg" alt="FBK">
                 </li>
-                <li>
+                <li class="social-item">
                     <img src="/svg/fb-icon.svg" alt="Inst">
                 </li>
             </ul>
